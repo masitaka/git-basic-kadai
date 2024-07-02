@@ -1,0 +1,36 @@
+C:\Users\marun\Desktop>mkdir git_challenge
+
+C:\Users\marun\Desktop>cd git_challenge
+
+C:\Users\marun\Desktop\git_challenge>git init
+Initialized empty Git repository in C:/Users/marun/Desktop/git_challenge/.git/
+
+C:\Users\marun\Desktop\git_challenge>echo Hello, world! >> hello_world.txt
+
+C:\Users\marun\Desktop\git_challenge>git add hello_world.txt
+
+C:\Users\marun\Desktop\git_challenge>git commit -m "hello_world.txtを追加"
+[main (root-commit) a93796f] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+C:\Users\marun\Desktop\git_challenge>echo こんにちは、世界！ >> hello_world.txt
+
+C:\Users\marun\Desktop\git_challenge>git add hello_world.txt
+
+C:\Users\marun\Desktop\git_challenge>git commit -m "日本語訳を追記"
+[main 95ccccf] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+C:\Users\marun\Desktop\git_challenge>git log
+commit 95ccccf0cd13379f105d8fccd66e138cc5747866 (HEAD -> main)
+Author: masitaka <masitaka69@gmail.com>
+Date:   Tue Jul 2 23:25:24 2024 +0900
+
+    日本語訳を追記
+
+commit a93796f9a694e8edc011583ad6efa6f3d60608ee
+Author: masitaka <masitaka69@gmail.com>
+Date:   Tue Jul 2 23:23:59 2024 +0900
+
+    hello_world.txtを追加
